@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition</title>
+</head>
+<body>
+    <center>
+        <h1>Nested condition</h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h1>A is greater than C</h1>
+            {% else %}
+                <h1>C is greater than A </h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>B is greater than C</h1>
+            {% else %}
+                <h1>C is greater than B</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
